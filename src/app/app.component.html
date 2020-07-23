@@ -1,5 +1,15 @@
-
 <div class="container">
-  <h1>Future Home of Karlie McWilliams' Website</h1>
-  <router-outlet></router-outlet>
+  <mat-sidenav-container>
+    <mat-sidenav #sidenav role="navigation">
+      Well hello
+      <!--this is a place for us to add side-nav code-->
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <!--in here all the content must reside. We will add a navigation header as well-->
+      <main>
+        <h1>Future Home of Karlie McWilliams' Website</h1>
+        <router-outlet></router-outlet>
+      </main>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
 </div>
