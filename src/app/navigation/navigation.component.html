@@ -1,0 +1,35 @@
+<mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <button mat-icon-button>
+        <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+      </button>
+      <span class="menu-spacer"></span>
+      <div>
+        <a mat-button [routerLink]="'/accounts'"> Home </a>
+        <a mat-button [routerLink]="'/create-account'"> Portfolio </a>
+        <a mat-button [routerLink]="'/create-contact'"> Resume </a>
+        <a mat-button [routerLink]="'/contact'"> Contact </a>
+        <a mat-button [routerLink]="'/activities'"> Blog </a>
+      </div>
+    </mat-toolbar-row>
+  </mat-toolbar>
+  <mat-sidenav-container>
+    <mat-sidenav #sidenav>
+      <mat-nav-list>
+  
+        <a mat-list-item [routerLink]="'/accounts'"> Home </a>
+        <a mat-list-item [routerLink]="'/create-account'"> Portfolio </a>
+        <a mat-list-item [routerLink]="'/create-contact'"> Resume </a>
+        <a mat-list-item [routerLink]="'/contact'"> Contact </a>
+        <a mat-list-item [routerLink]="'/activities'"> Blog </a>
+        <a mat-list-item (click)="sidenav.toggle()" href="" mat-list-item>Close</a>
+  
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+      <div style="height: 88vh;">
+  
+        <router-outlet></router-outlet>
+      </div>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
