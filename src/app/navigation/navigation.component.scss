@@ -1,3 +1,17 @@
-mat-sidenav-container {
-    background-color: #EBCFCE;
+.content-container {
+    margin-left: 20%;
+    margin-right: 20%;
+
+    mat-toolbar {
+        background-color: #EBCFCE;
+        color: black;
+
+        mat-toolbar-row {
+            margin: 0 auto;
+        }
+    }
+
+    mat-sidenav-container {
+        background-color: #EBCFCE;
+    }
 }

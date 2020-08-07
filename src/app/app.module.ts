@@ -10,6 +10,7 @@ import { HomeComponent } from './home/home.component';
 
 // Material Components
 
+import {LayoutModule} from '@angular/cdk/layout';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
@@ -33,6 +34,7 @@ import { NavigationComponent } from './navigation/navigation.component';
     MatToolbarModule,
     MatIconModule,
     MatButtonModule,
+    LayoutModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
