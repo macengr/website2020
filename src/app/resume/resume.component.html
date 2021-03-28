@@ -1,0 +1,90 @@
+<div id="main">
+    
+    <div id="header" class="center-content clearfix">
+        <h1 id="name">{{ bio.name }}</h1>
+        <span>{{ bio.role }}</span><hr/>
+        <ul id="topContacts" class='flex-box'>
+            <li class="flex-item">
+                <span class="orange-text">location</span>
+                <span class="white-text">{{ bio.location }}</span>
+            </li>
+            <li class="flex-item">
+                <span class="orange-text">LinkedIn</span>
+                <span class="white-text">{{ bio.contactInfo.linkedin }}</span>
+            </li>
+            <li class="flex-item">
+                <span class="orange-text">blog</span>
+                <span class="white-text">{{ bio.contactInfo.blog}}</span>
+            </li>
+            <li class="flex-item">
+                <span class="orange-text">github</span>
+                <span class="white-text">{{ bio.contactInfo.github }}</span>
+            </li>
+            <li class="flex-item">
+                <span class="orange-text">twitter</span>
+                <span class="white-text">{{ bio.contactInfo.twitter }}</span>
+            </li>
+        </ul>
+        <span class="welcome-message">{{ bio.welcomeMessage }}</span>
+        <img src="{{ bio.biopic }}" class="biopic">
+        <h3 id="skillsH3">Skills at a Glance:</h3>
+        <ul id="skills" class="flex-box">
+            <li *ngFor="let skill of bio.skills" class="flex-item">
+                <span class="white-text">{{ skill }}</span>
+            </li>
+        </ul>
+    </div>
+    <div style='clear: both;'>
+        <div id="education" class='gray'>
+        <h2>Education</h2>
+            <div *ngFor="let school of schools" class="education-entry">
+                <a href="{{ school.url }}" target="_blank">{{ school.name }} -- {{ school.degree }}</a>
+                <div class="date-text">{{ school.degreeDates}}</div>
+                <div class="location-text">{{ school.location }}</div>
+                <em><br>Major: {{ school.majors }}</em>
+            </div>
+        </div>
+    </div>
+    <div id="workExperience" class='gray'>
+        <h2>Work Experience</h2>
+        <div *ngFor="let job of jobs" class="work-entry">
+            <a href="{{ job.url }}" target="_blank">{{ job.employer }} - {{ job.title }}</a>
+            <div class="date-text">{{ job.dates }}</div>
+            <div class="location-text">{{ job.location }}</div>
+            <p><br>{{ job.description }}</p>
+        </div>
+    </div>
+    <div id="projects">
+        <!-- <h2>Projects</h2>
+        <div class="project-entry">
+            <a href="#"></a>
+            <div class="date-text"></div>
+            <p><br></p>
+            <img src="">
+        </div>
+    </div>
+    <div id="mapDiv">
+        <h2>Where I've Lived and Worked</h2>
+    </div> -->
+    <div id="letsConnect" class='dark-gray'>
+        <h2 class='orange center-text'>Let's Connect</h2>
+          <ul id="footerContacts" class="flex-box">
+            <li class="flex-item">
+                <span class="orange-text">LinkedIn</span>
+                <span class="white-text">{{ bio.contactInfo.linkedin }}</span>
+            </li>
+            <li class="flex-item">
+                <span class="orange-text">blog</span>
+                <span class="white-text">{{ bio.contactInfo.blog}}</span>
+            </li>
+            <li class="flex-item">
+                <span class="orange-text">github</span>
+                <span class="white-text">{{ bio.contactInfo.github }}</span>
+            </li>
+            <li class="flex-item">
+                <span class="orange-text">twitter</span>
+                <span class="white-text">{{ bio.contactInfo.twitter }}</span>
+            </li>
+        </ul>
+    </div>
+</div>

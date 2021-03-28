@@ -16,6 +16,10 @@ import { NavigationComponent } from './navigation/navigation.component';
 import { MaterialModule } from './material/material.module';
 import { HeaderComponent } from './navigation/header/header.component';
 import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
+import { NowComponent } from './now/now.component';
+import { ResumeComponent } from './resume/resume.component';
+import { ContactComponent } from './contact/contact.component';
+import { PortfolioComponent } from './portfolio/portfolio.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +29,10 @@ import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.com
     LayoutComponent,
     HeaderComponent,
     SidenavListComponent,
+    NowComponent,
+    ResumeComponent,
+    ContactComponent,
+    PortfolioComponent,
   ],
   imports: [
     BrowserModule,
