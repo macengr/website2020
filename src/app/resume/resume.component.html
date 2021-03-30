@@ -10,19 +10,27 @@
             </li>
             <li class="flex-item">
                 <span class="orange-text">LinkedIn</span>
-                <span class="white-text">{{ bio.contactInfo.linkedin }}</span>
-            </li>
-            <li class="flex-item">
-                <span class="orange-text">blog</span>
-                <span class="white-text">{{ bio.contactInfo.blog}}</span>
+                <span class="white-text">
+                    <a href="{{ bio.contactInfo.linkedInUrl}}">
+                        {{ bio.contactInfo.linkedin }}
+                    </a>
+                </span>
             </li>
             <li class="flex-item">
                 <span class="orange-text">github</span>
-                <span class="white-text">{{ bio.contactInfo.github }}</span>
+                <span class="white-text">
+                    <a href="{{ bio.contactInfo.githubUrl }}">
+                        {{ bio.contactInfo.github }}
+                    </a>
+                </span>
             </li>
             <li class="flex-item">
                 <span class="orange-text">twitter</span>
-                <span class="white-text">{{ bio.contactInfo.twitter }}</span>
+                <span class="white-text">
+                    <a href="{{ bio.contactInfo.twitterUrl }}">
+                        {{ bio.contactInfo.twitter }}
+                    </a>
+                </span>
             </li>
         </ul>
         <span class="welcome-message">{{ bio.welcomeMessage }}</span>
@@ -71,19 +79,15 @@
           <ul id="footerContacts" class="flex-box">
             <li class="flex-item">
                 <span class="orange-text">LinkedIn</span>
-                <span class="white-text">{{ bio.contactInfo.linkedin }}</span>
-            </li>
-            <li class="flex-item">
-                <span class="orange-text">blog</span>
-                <span class="white-text">{{ bio.contactInfo.blog}}</span>
+                <span class="white-text"><a href="{{ bio.contactInfo.linkedInUrl }}">{{ bio.contactInfo.linkedin }}</a></span>
             </li>
             <li class="flex-item">
                 <span class="orange-text">github</span>
-                <span class="white-text">{{ bio.contactInfo.github }}</span>
+                <span class="white-text"><a href="{{ bio.contactInfo.githubUrl }}">{{ bio.contactInfo.github }}</a></span>
             </li>
             <li class="flex-item">
                 <span class="orange-text">twitter</span>
-                <span class="white-text">{{ bio.contactInfo.twitter }}</span>
+                <span class="white-text"><a href="{{ bio.contactInfo.twitterUrl }}">{{ bio.contactInfo.twitter }}</a></span>
             </li>
         </ul>
     </div>

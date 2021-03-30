@@ -14,10 +14,14 @@ export class ResumeComponent implements OnInit {
     "contactInfo" : {
       "email" : "scottymac64@hotmail.com",
       "twitter" : "@karliechronicle",
-      "blog" : "http://thekarliechronicles.wordpress.com",
+      "twitterUrl": "https://twitter.com/KarlieChronicle",
+      "blog" : "The Karlie Chronicles",
+      "blogURL": "http://thekarliechronicles.wordpress.com",
       "portfolio" : "codepen.io",
       "github" : "macengr",
-      "linkedin": "https://www.linkedin.com/in/karliemcwilliams/"
+      "githubUrl": "https://github.com/macengr",
+      "linkedin": "Karlie McWilliams",
+      "linkedInUrl": "https://www.linkedin.com/in/karliemcwilliams/",
     },
     "location" : "Pittsburgh, PA",
     "biopic" : "assets/8150967.gif",
