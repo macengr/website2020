@@ -1,9 +1,10 @@
-<header>
-    <h1>Contact me!</h1>
-    <p>Please contact me with any web development needs you might have!</p>
-    <p>Your information will <em>never</em> be shared with anyone else.</p>
-</header>
 <section>
+    <header>
+        <h1>Contact me!</h1>
+        <p>Please contact me with any web development needs you might have!</p>
+        <p>Your information will <em>never</em> be shared with anyone</p>
+    </header>
+
     <form class="contact" [formGroup]="form" method="post" (ngSubmit)="onSubmit()">
         Name
         <input [formControl]="name" required>
