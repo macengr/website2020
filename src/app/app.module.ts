@@ -11,7 +11,6 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { HomeComponent } from './home/home.component';
 import { LayoutComponent } from './layout/layout.component';
-import { NavigationComponent } from './navigation/navigation.component';
 import { ResumeComponent } from './resume/resume.component';
 import { ContactComponent } from './contact/contact.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
@@ -32,7 +31,6 @@ import { MaterialModule } from './material/material.module';
   declarations: [
     AppComponent,
     HomeComponent,
-    NavigationComponent,
     LayoutComponent,
     HeaderComponent,
     SidenavListComponent,

@@ -1,169 +1,40 @@
-// @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css");
-// .heading {
-//   border-bottom: 2px solid black;
-// }
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.css");
 
-// .portfolio {
-//   background-color: #d3d3d3;
-// }
+h1 {
+  text-align: center;
+}
 
-// .portnav {
-//   text-align: center;
-//   word-spacing: 20px;
-// }
+h2 {
+  text-align: center;
+}
 
-// .me a:link {
-//   background-color: #d3d3d3;
-//   color: black;
-//   font-weight: bold;
-// }
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-content: space-around;
 
-// .me a:hover {
-//   background-color: white;
-// }
+  a {
+    max-width: 320px;
+    margin-bottom: 15px;
 
-// .me a:visited {
-//   color: black;
-// }
+    .myWork {
+      background-color: rgba(128, 128, 128, 0.5);
+      border: 1px solid black;
+      height: 320px;
+      overflow: hidden;
 
-// .topnav a:link {
-//   color: black;
-//   font-weight: bold;
-// }
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
 
-// .topnav a:visited {
-//   color: black;
-// }
-
-// h1 {
-//   text-align: center;
-// }
-
-// h2 {
-//   text-align: center;
-// }
-
-// [class*="btn-"] {
-//   background-color: LightGray;
-//   color: black;
-//   display: inline-block;
-//   font-family: Arial, Helvetica, sans-serif;
-//   font-size: 18px;
-//   padding: 8px 16px;
-//   text-decoration: none;
-//   box-shadow: inset 0 0px 0 black, 0 10px 20px black;
-//   border-radius: 4px;
-//   text-shadow: 1px 1px 1px #000, 3px 3px 5px gray;
-//   border: 2px solid black;
-//   -webkit-transition: all 0.5s ease-out;
-//   -moz-transition: all 0.5s ease-out;
-//   -ms-transition: all 0.5s ease-out;
-//   -o-transition: all 0.5s ease-out;
-//   transition: all 0.5s ease-out;
-// }
-
-// .btn-default:hover {
-//   background-color: black;
-//   color: white;
-//   text-shadow: 0px 0px 0px #000, 0px 0px 0px;
-//   border: 2px solid black;
-//   -webkit-transform: scale(1.1);
-//   -moz-transform: scale(1.1);
-//   -ms-transform: scale(1.1);
-//   -o-transform: scale(1.1);
-//   transform: scale(1.1);
-// }
-
-// .topnav {
-//   background-color: DarkGray;
-// }
-
-// .home {
-//   color: white;
-//   margin: 0 auto;
-//   position: top;
-//   width: 100%;
-//   background-size: 100%;
-//   background-attachment: fixed;
-//   background-position: center top;
-//   padding-top: 200px;
-//   padding-bottom: 250px;
-//   background-repeat: no-repeat;
-//   background-image: url("https://images.unsplash.com/photo-1427466920301-a96b3cadc6c8?ixlib=rb-0.3.5&q=80&fm=jpg&w=1080&fit=max&s=c71cc29f6c69ace31e8004d996720112");
-// }
-
-// .aboutpage {
-//   color: black;
-//   margin: 0 auto;
-//   background-attachment: fixed;
-//   background-position: center top;
-//   background-size: 100%;
-//   background-repeat: no-repeat;
-//   padding-top: 200px;
-//   padding-bottom: 250px;
-//   width: 100%;
-//   background-image: url("https://s3.us-east-2.amazonaws.com/codepen-images-macengr/shttefan-294119-unsplash.jpg");
-// }
-
-// .aboutpage a {
-//   color: purple;
-// }
-
-// .portfoliopage {
-//   background-size: 100%;
-//   background-attachment: fixed;
-//   background-position: center top;
-//   margin: 0 auto;
-//   width: 100%;
-//   padding-top: 200px;
-//   padding-bottom: 250px;
-//   background-image: url("https://s3.us-east-2.amazonaws.com/codepen-images-macengr/code%2Cjpg.jpg");
-// }
-
-// .portfoliopage a:link {
-//   color: black;
-// }
-
-// .portfoliopage a:visited {
-//   color: black;
-// }
-
-// .myWork {
-//   background-color: rgba(128, 128, 128, 0.5);
-//   border: 1px solid black;
-//   height: 320px;
-// }
-
-// .myWork:hover {
-//   color: white;
-//   background-color: rgba(0, 0, 0, 0.8);
-//   border: 2px solid black;
-//   box-shadow: inset 0 0px 0 black, 0 10px 20px black;
-// }
-
-// .contact {
-//   color: white;
-//   margin: 0 auto;
-//   background-size: 100%;
-//   background-attachment: fixed;
-//   background-position: center top;
-//   padding-top: 200px;
-//   padding-bottom: 250px;
-//   width: 100%;
-//   background-image: url("https://images.unsplash.com/photo-1446080501695-8e929f879f2b?fit=crop&fm=jpg&h=650&ixjsv=2.0.0&ixlib=rb-0.3.5&q=80&w=1375");
-// }
-
-// .extra {
-//   margin-top: 3%;
-//   word-spacing: 20px;
-// }
-
-// #copyright {
-//   word-spacing: 0px;
-//   color: gray;
-//   font-size: 12px;
-// }
-
-// .contactbtns {
-//   word-spacing: 10px;
-// }
+    .myWork:hover {
+      color: white;
+      background-color: rgba(0, 0, 0, 0.8);
+      border: 2px solid black;
+      box-shadow: inset 0 0px 0 black, 0 10px 20px black;
+    }
+  }
+}
